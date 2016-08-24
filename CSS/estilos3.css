@@ -1,0 +1,168 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	
+}
+
+#contenedor{
+	font-family:Tahoma, Geneva, sans-serif;	
+	border: 1px solid;
+}
+
+header{
+	/*border: 1px solid;*/
+	/*margin: 5px;*/
+	text-align:center;
+	height:140px; /* Alto de la cabecera */
+	background-image:url('../images/cintapelifull.png');
+	background-repeat:repeat-x; /* Repite la imagen en el eje X */
+	padding-top:32px; /* Relleno superior para que la imagen se vea completa */
+	-moz-animation: animationheader 15s infinite;
+	-webkit-animation: animationheader 15s infinite;
+	-moz-animation-play-state:running;
+}
+@-moz-keyframes animationheader{
+  from{
+     margin-left: -16%;
+     /*width: 500%;*/
+  }
+  to{
+     margin-left: -61.4%;
+     /*width: 100%;*/
+  }
+}
+
+@-webkit-keyframes animationheader{
+  from{
+     margin-left: -16%;
+     /*width: 500%;*/
+  }
+  to{
+     margin-left: -61.4%;
+     /*width: 100%;*/
+  }
+}
+
+/* ESTILOS PARA EL MENU */
+nav{
+	/*border: 1px solid;*/
+}
+
+/* Menú Primer Nivel */
+#menu_horizontal{
+	background-color:#abcdff; /* Color de fondo por defecto */
+	line-height: 2em; /* Define el alto de del menú */
+	list-style-type:none; /* Saca las viñetas de los ULs */
+	/*padding-top:25px;
+	padding-bottom:25px;*/
+	/*padding-right:70px;
+	padding-left:70px;*/
+	margin: 0;
+	margin-right: 3%;
+	margin-left: 2%;
+}
+.background{
+	text-align:center;
+	background-color:#FCCD8D;
+	width:11.3em;
+}
+
+/* Menú Segund Nivel */
+#menu_horizontal ul{
+	list-style-type:none; /* Saca las viñetas de los ULs */
+	position: relative;
+	background: url(../images/bg_menu.png); /* imagen de fondo para los submenus */
+	padding:0;
+	width:11.3em;
+	text-align: left;
+}
+
+#menu_horizontal li{
+	float:left;
+	position:relative;
+}
+
+span{
+	color:#FFF;
+}
+
+#menu_horizontal a:link, #menu_horizontal a:active, #menu_horizontal a:visited{
+	display: block; /* Muestra los enlaces en bloque */
+	padding:5px 12px;
+	/*border: 1px solid;*/
+	text-decoration:none;
+	color:#000; /* Color de texto por defecto para todos los menús */
+}
+
+#menu_horizontal a:hover{
+   background-color:#953288; /*Color de fondo que mostrará al pasar el puntero por encima del hyperlink */
+   color:#FFFFFF; /* Color de text que mostrará al pasar el puntero por encima */
+   /*text-shadow: 1px 1px 20px 5px #FFF;*/
+   text-shadow: 0 0 10px #FFFFFF;
+}
+
+#menu_horizontal li ul{
+	position: absolute;
+	display: none;
+}
+
+#menu_horizontal li ul a{
+	font-size:12px;
+	/*color: white;*/
+    width:13em;
+    float:left;
+}
+
+#menu_horizontal ul ul{
+	top: auto;
+}
+
+/*Estilos para los submenus de Tercer Nivel */
+#menu_horizontal li ul ul {
+    left:10em;
+    margin:0px 0 0 18px; /* Ajusta la ubicación donde se mostrará el menú de tercer nivel */
+}
+
+#menu_horizontal li:hover ul ul, #menu_horizontal li:hover ul ul ul, #menu_horizontal li:hover ul ul ul ul{
+    display:none;
+}
+
+#menu_horizontal li:hover ul, #menu_horizontal li li:hover ul, #menu_horizontal li li li:hover ul, #menu_horizontal li li li li:hover ul{
+    display:block;
+}
+/* FIN DE ESTILOS PARA MENU HORIZONTAL*/
+
+#menu_vertical{
+	clear: both;
+	border: 1px solid;
+	margin: 5px;
+	float: left;
+	width:13%;
+}
+
+section{
+	/*border: 1px solid;*/
+	/*margin: 5px;*/
+	float: left;
+	width:83.5%;
+}
+section article{
+	border: 1px solid;
+	margin: 5px;
+	float: left;
+	width:85%;
+}
+section aside{
+	border: 1px solid;
+	margin: 5px;
+	float: left;
+	width:12.5%;
+}
+footer{
+	border: 1px solid;
+	margin: 5px;
+	clear: both;
+	text-align:center;
+}
+
+

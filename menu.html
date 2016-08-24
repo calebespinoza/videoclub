@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style type="text/css">
+/*body{margin:0px; font-family:'PT Sans Narrow', sans-serif;}*/
+/*#main{margin:0 auto; position:relative; width:960px; height:auto; min-height:700px;}*/
+/* MENU */
+.mi-menu{ list-style-type: none; margin: 0; position:relative;  padding: 0; height: 40px; width: 90%; float:right; margin-top:15px; /*right:0px;*/}
+.mi-menu  br { display:none; }
+.mi-menu  li { min-width:100px; text-align:center; background:#fbfbfb; display: block; float: left; /* la lista se ve horizontal */ height:60px; list-style: none; margin: auto; padding: 0; position: relative;}
+.mi-menu li a { /*width:150px*/; margin:0px; color: #000; display: block; font-family: 'PT Sans Narrow', sans-serif; font-size: 16px; line-height: 28px; padding-left:13px; padding-right:13px; padding-top:16px; padding-bottom:16px; text-decoration: none; -webkit-transition: color .2s ease-in-out; -moz-transition: color .2s ease-in-out; -o-transition: color .2s ease-in-out; -ms-transition: color .2s ease-in-out;    transition: color .2s ease-in-out; }
+.mi-menu li:first-child a { border-left: none; }
+.mi-menu li:last-child a{ border-right: none; }
+.mi-menu li:hover > a { background:#953288; color:#FFFFFF; }
+/* los submenús */
+.mi-menu ul {border-radius: 0 0 10px 10px; left: 0; margin: 0; opacity: 0; position: absolute; top: 60px; width:240px; -moz-transition: opacity .25s ease .1s; -webkit-transition: opacity .25s ease .1s; -o-transition: opacity .25s ease .1s; -ms-transition: opacity .25s ease .1s;    transition: opacity .25s ease .1s;}
+.mi-menu li:hover > ul { opacity: 1; }
+.mi-menu ul li { width:250px; background: url(images/bg_menu.png); text-align:left; height: 0; /* no son visibles */ overflow: hidden; padding: 0;left:-41px; -moz-transition: height .15s ease .1s; -webkit-transition: height .15s ease .1s; -o-transition: height .15s ease .1s; -ms-transition: height .15s ease .1s; transition: height .15s ease .1s; margin:1px;}
+.mi-menu li:hover > ul li {height: 38px; /* los mostramos */ overflow: visible;  padding: 0; }
+.mi-menu ul li a {border: none; margin: 0; color:#FFF; font-size:15px; padding: 5px 5px; width: 240px;}
+.mi-menu ul li:last-child a { border: none; }
+/* FIN DE MENU */
+</style>
+</head>
+
+<body>
+<nav id="menu">
+   <ul class="mi-menu" style="z-index:999;">
+   <li><a href="#"><span>Inicio</span></a></li>                   
+    <li><a href="#"><span>Alquilar Película</span></a>
+    	<ul>
+    		<li><a href="#">Películas Disponibles ></a>
+            	<ul class="mi-menu" style="z-index:999;">
+                	<li><a href="#">Reservar Película</a></li>
+                </ul>
+            </li>
+      		<li><a href="#">Películas Estrenos ></a>
+            	<ul class="mi-menu" style="z-index:999;">
+                	<li><a href="#">Reservar Película</a></li>
+                </ul>
+            </li>
+      		<li><a href="#">Películas Proximamente a Estrenar ></a>
+            	<ul class="mi-menu" style="z-index:999;">
+                	<li><a href="#">Reservar Película</a></li>
+                </ul>
+            </li>
+     	</ul>
+    </li>
+    <li><a href="#"><span>Comprar Película</span></a>
+    	<ul>
+        	<li><a href="#">Películas Disponibles en HD</a>
+            	<ul>
+                	<li><a href="#">Realizar Pedido</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Películas Disponibles en BlueRay</a>
+            	<ul>
+                	<li><a href="#">Realizar Pedido</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Solicitar Película</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Películas más Solicitadas</a>
+    	<ul>
+        	<li><a href="#">Películas más Alquiladas</a></li>
+            <li><a href="#">Películas más Compradas</a></li>
+    	</ul>
+    </li>
+    <li><a href="#">Contactos</a></li>
+    <li><a href="#">Contactar</a></li> 
+   </ul>
+</nav>
+</body>
+</html>

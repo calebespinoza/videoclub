@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	
+}
+
+#contenedor{
+	font-family:Tahoma, Geneva, sans-serif;	
+	border: 1px solid;
+}
+
+header{
+	border: 1px solid;
+	margin: 5px;
+	text-align:center;
+}
+
+#menu_horizontal{
+	/*border: 1px solid;*/
+	height:30px;
+	padding:0px 19.8%;
+}
+/* ESTILOS PARA EL MENU */
+
+#nav, #nav ul{
+	margin:0;
+    padding:0;
+    list-style-type:none;
+    list-style-position:outside;
+    position: relative;
+    line-height:2em; /*Define el alto de cada Item*/
+}
+ 
+#nav a:link, #nav a:active, #nav a:visited{
+    display:block; /*Todos los hypervinculos son mostrados en Bloque */
+    padding:10px 15px; /* Relleno a los laterales del hyperlink */
+    /*border:1px solid #333;*/
+    color:#000; /*Color del texto */
+    text-decoration:none;
+    background-color:#fbfbfb; /*Color de fondo */
+}
+ 
+#nav a:hover{
+   background-color:#953288; /*Color de fondo que mostrará al pasar el puntero por encima del hyperlink */
+   color:#FFFFFF; /* Color de text que mostrará al pasar el puntero por encima */
+}
+
+#nav li{
+    float:left; /* Alinea los elementos del menú en sentido horizontal */
+    position:relative;
+}
+/* ESTILOS PARA LOS SUBMENUS */
+span{
+	color: #fff;
+}
+#nav ul {
+    position:absolute;
+    width:15em; /*Define el ancho de los submenus */
+    top:3.3em; /* Posiciona el lugar donde se mostrarán los submenus cuando el puntero pase por encima de un elemento */
+    display:none; /* No muestra los subelementos UL (submenus) que tiene cada elemento LI del menú principal */
+	
+}
+/*Estilos para los enlaces de los submenus */
+#nav li ul a{
+	font-size:12px;
+	color: white;
+    width:14em;
+    float:left;
+	background: url('../images/bg_menu.png');
+}
+
+
+#nav ul ul{
+	top: auto;
+}
+
+/*Estilos para los submenus de Tercer Nivel */
+#nav li ul ul {
+    left:10em;
+    margin:0px 0 0 38px; /* Ajusta la ubicación donde se mostrará el menú de tercer nivel */
+}
+
+#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li:hover ul ul ul ul{
+    display:none;
+}
+
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li li li li:hover ul{
+    display:block;
+}
+
+#menu_vertical{
+	clear: both;
+	border: 1px solid;
+	margin: 5px;
+	float: left;
+	width:15%;
+}
+
+section{
+	/*border: 1px solid;*/
+	/*margin: 5px;*/
+	float: left;
+	width:83.5%;
+}
+section article{
+	border: 1px solid;
+	margin: 5px;
+	float: left;
+	width:85%;
+}
+section aside{
+	border: 1px solid;
+	margin: 5px;
+	float: left;
+	width:12.5%;
+}
+footer{
+	border: 1px solid;
+	margin: 5px;
+	clear: both;
+	text-align:center;
+}
+
+
